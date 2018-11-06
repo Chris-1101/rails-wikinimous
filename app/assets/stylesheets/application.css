@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F8F8F8;
+  border-bottom: 1px solid #E7E7E7;
+  color: #777;
+}
+
+.navbar a {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: #888;
+}
+
+.navbar a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.title {
+  padding: 7px 0;
+  font-size: 18px !important;
+}
+
+.title:hover {
+  color: #888 !important;
+}

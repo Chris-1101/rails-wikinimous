@@ -1,0 +1,11 @@
+<div class="articles">
+  <article class="text-justify">
+    <div class="text-center">
+      <h1><%= @article.title %></h1> &nbsp;
+      <%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe, edit_article_path(@article) %>
+      <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, article_path(@article), method: :delete %>
+    </div>
+    <hr />
+    <p><%= @article.content %></p>
+  </article>
+</div>

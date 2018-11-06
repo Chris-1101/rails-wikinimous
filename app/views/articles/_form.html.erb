@@ -1,0 +1,29 @@
+<!-- app/views/tasks/_form.html.erb -->
+
+<div class="container">
+  <div class="row">
+    <%= form_for(article) do |f| %>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :content %>
+      <%= f.text_area :content, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.submit class: "btn btn-outline-secondary" %>
+    </div>
+    <div class="form-group">
+      <small>
+        <% unless @article.new_record? %>
+        <%= link_to "Show", article_path(@article) %> |
+        <% end %>
+        <%= link_to "Back", articles_path %>
+      </small>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<!-- .element: class="view" -->

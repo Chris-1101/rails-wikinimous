@@ -5,11 +5,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= stylesheet_link_tag    'https://use.fontawesome.com/releases/v5.0.13/css/all.css' %>
+    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="navbar">
+      <%= link_to "Wikinimous", articles_path, class: "title" %>
+      <%= link_to "New Article", new_article_path %>
+    </div>
     <%= yield %>
   </body>
 </html>
